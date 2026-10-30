@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .button a {
+            text-decoration: none;
+            color:#fff;
+            margin: 60px;
+            padding: 60px;
+        }
+        .button button {
+            background-color: slategrey;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+        }
+        .button button:hover {
+            background-color: rgb(156, 160, 160);
+            color: #000;
+        }
+        .wrapper{
+            border: 1px solid #000;
+             width:100%; 
+             height:200px;
+             color:white; 
+             display:flex; 
+             justify-content: space-between;
+        }
+        .img{
+            background-image:url(bg-img2.jpg);
+            width:100%;
+            height:auto;
+        }
+        .shop{
+            border: none;
+            padding: 10px 20px;
+            margin: 50px;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+        }
+        .style{
+            background-image: url(bg-img3.jpg);
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .cars {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            width: 80%;
+        }
+
+        .car {
+            text-align: center;
+        }
+
+        .car img {
+            width: 300px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .car button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+        }
+        .helli-launcher {
+            position: fixed;
+            right: 24px;
+            bottom: 24px;
+            z-index: 1000;
+            border: 0;
+            border-radius: 28px;
+            padding: 14px 22px;
+            background: #172b4d;
+            color: #fff;
+            font: inherit;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 14px #0005;
+        }
+        .helli-chat {
+            position: fixed;
+            right: 24px;
+            bottom: 84px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            width: min(360px, calc(100vw - 32px));
+            height: min(460px, calc(100vh - 120px));
+            background: #fff;
+            border: 1px solid #cbd2dc;
+            border-radius: 14px;
+            box-shadow: 0 8px 28px #0004;
+            font: 15px Arial, sans-serif;
+        }
+        .helli-chat[hidden] {
+            display: none;
+        }
+        .helli-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 16px;
+            border-radius: 13px 13px 0 0;
+            background: #172b4d;
+            color: #fff;
+        }
+        .helli-header h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .helli-close {
+            border: 0;
+            background: transparent;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .helli-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 14px;
+            background: #f5f7fa;
+        }
+        .helli-message {
+            width: fit-content;
+            max-width: 85%;
+            margin: 0 0 10px;
+            padding: 10px 12px;
+            border-radius: 12px;
+            line-height: 1.4;
+            white-space: pre-line;
+        }
+        .helli-bot {
+            background: #fff;
+            border: 1px solid #e0e4ea;
+        }
+        .helli-user {
+            margin-left: auto;
+            background: #dce8fb;
+        }
+        .helli-form {
+            display: flex;
+            gap: 8px;
+            padding: 12px;
+            border-top: 1px solid #e0e4ea;
+        }
+        .helli-form input {
+            flex: 1;
+            min-width: 0;
+            padding: 10px;
+            border: 1px solid #aeb8c6;
+            border-radius: 7px;
+            font: inherit;
+        }
+        .helli-form button {
+            border: 0;
+            border-radius: 7px;
+            padding: 0 14px;
+            background: #172b4d;
+            color: #fff;
+            font: inherit;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="wrapper" style="background-image: url('bg-img3.jpg');">
+        <h1 style="font-size: 60px; color:#fff;">O.V MOTORS</h1>
+        <p><h2>Hours: <br>MON-FRI 9:00 AM - 7:00 PM<br>SAT 9:00 AM - 5:00 PM</h2></p>
+        <h3>📞- 8469056004</h3>
+    </header>
+    <div class="img">
+    <div class="button" style="border: 1px solid #000; width:100%; height:50px; align-items:center;">
+        <button style="border-radius: 5px 5px 5px 5px;"><a href="#">Home</a></button>
+        <button style="border-radius: 5px 5px 5px 5px;"><a href="inventory.html">Inventory</a></button>
+        <button style="border-radius: 5px 5px 5px 5px;"><a href="Apply online.html">Apply Online</a></button>
+        <button style="border-radius: 5px 5px 5px 5px;"><a href="info.html">About Us</a></button>
+    </div>
+    <div style="border: 1px solid #000; width:100%; height:auto;">
+        <img src="cars image.jpg" style="width:95%; height:500px;">
+    </div>
+    <div style="border: 1px solid #000; width:100%; height:auto; color:#fff">
+        <p style="font-size: 80px; text-align: center;"><b>FRESH ON THE LOT</b></p><br>
+        <p style="font-size: 40px; text-align: center;"><b>Check Out Our Latest Arrivals!</b></p>
+        <!--<div style="display: flex; justify-content:space-between; align-items: center; margin: 50px;">-->
+        <figure style="display: flex; justify-content:space-between; align-items: center; padding: 10px; margin: 10px; text-align: center;">
+        <img src="fresh-img1.jpg" style="width: 300px; height: 200px;">
+        <figcaption>
+        <p>Tata Harrier</p>
+        <p>Launch in 2026</p>
+        <p>4.6* 307 Review</p>
+        <p>Rs 13-26.11 lakhs</p>
+        </figcaption>
+        <a href="car9.html">
+        <img src="fresh-img2.jpg" style="width: 300px; height: 200px;"><br>
+        </a>
+        <figcaption>
+            <p>Maruti Suzuki Baleno</p>
+            <p>Launch in 2026</p>
+            <p>4.3* 156 Review</p>
+            <p>Rs 7.5-11.5 lakhs</p>
+        </figcaption>
+        <a href="car33.html">
+        <img src="fresh-img3.jpg" style="width: 300px; height: 200px;"><br>
+        </a>
+        <figcaption>
+            <p>Volkswagen Virtus</p>
+            <p>Launch in 2026</p>
+            <p>4.5* 482 Review</p>
+            <p>Rs 10.71 - 19.20 Lakh</p>
+        </figcaption>
+        </figure>
+        <!--</div>-->
+        <br>
+        <button class="inventory" style="border-radius: 10px 10px 10px 10px; align-content: center; padding: 20px; margin: 100px; display:flex; justify-content: center;"><a href="inventory.html">View All Inventory</a></button>
+    </div>
+    <div style="border: 1px solid #000; width:100%; height:auto; background-image: url(bg-img2.jpg); ">
+        <p style="color: #fff; text-align: center; font-size: 80px;"><b>SHOP BY BODY STYLE</b></p>
+        <p style="color: #fff; text-align: center; font-size: 40px;">Find the perfect vehicle for your lifestyle.</p>
+        <div class="cars">
+            <div class="car">
+                <img src="img2.jpg" style="width: 400px; height: 250px;">
+                <button>Shop SUV</button>
+            </div>
+
+            <div class="car">
+                <img src="img3.jpg" style="width: 400px; height: 250px;">
+                <button>Shop HATCHBACK</button>
+            </div>
+
+            <div class="car">
+                <img src="img4.jpg" style="width: 400px; height: 250px;">
+                <button>Shop SEDANS</button>
+            </div>
+
+            <div class="car">
+                <img src="IMG7.jpg" style="width: 400px; height: 250px;">
+                <button>Shop MUVS (Seven Seater)</button>
+            </div>
+        </div>
+
+    </div>
+        <div style="border: 1px solid #000; width:100%; height:auto; background-image: url(bg-img1.jpg); color:white;">
+            <p style="font-size: 60px; text-align: center;"><b>FINANCING MADE SIMPLE</b></p>
+            <p style="font-size: 40px; text-align: center;"><b>Different situations. Different options. One place to start.</b></p>
+            <div style="display: flex; justify-content:space-between; align-items: center; margin: 100px; padding: 50px;">
+                <div style="width:200px; height:auto;background-color: #fff; color: #000; text-align: center;"><h3>BANK FINANCING</h3>
+                    <h4>Apply with our lending partners and explore financing options that fit your situation.</h4></div>
+                <div style="width: 200px; height: auto;background-color: #fff; color: #000; text-align: center;"><h3>BUY HERE PAY HERE</h3>Flexible in-house financing options with no traditional credit check.</div>
+                <div style="width: 200px; height: auto;background-color: #fff; color: #000; text-align: center;"><h3>FIRST TIME BUYER</h3><h4>Buying your first vehicle? We'll help you explore your financing options.</h4></div>
+            </div>
+        </div>
+    </div>
+    <section class="helli-chat" id="helli-chat" aria-label="Chat with helli" hidden>
+        <div class="helli-header">
+            <h2>Chat with helli</h2>
+            <button class="helli-close" id="helli-close" type="button" aria-label="Close chat">&times;</button>
+        </div>
+        <div class="helli-messages" id="helli-messages" role="log" aria-live="polite"></div>
+        <form class="helli-form" id="helli-form">
+            <input id="helli-input" type="text" placeholder="Ask about our cars or services..." aria-label="Your question" required>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <button class="helli-launcher" id="helli-launcher" type="button" aria-controls="helli-chat" aria-expanded="false">Chat with helli</button>
+    <script>
+        const helliChat = document.getElementById("helli-chat");
+        const helliLauncher = document.getElementById("helli-launcher");
+        const helliMessages = document.getElementById("helli-messages");
+        const helliInput = document.getElementById("helli-input");
+
+        function addHelliMessage(text, sender) {
+            const message = document.createElement("p");
+            message.className = "helli-message helli-" + sender;
+            message.textContent = text;
+            helliMessages.appendChild(message);
+            helliMessages.scrollTop = helliMessages.scrollHeight;
+        }
+
+        function answerHelli(question) {
+            const text = question.toLowerCase().replace(/[^a-z0-9\s-]/g, " ").replace(/\s+/g, " ").trim();
+
+            if (/\b(hi|hello|hey|good morning|good afternoon)\b/.test(text)) {
+                return "Hello! I'm Helli, the O.V MOTORS website assistant. What would you like to know?";
+            }
+            if (/\b(address|location|where|directions|visit)\b/.test(text)) {
+                return "O.V MOTORS is on the Sarkhej-Gandhinagar highway, opposite Divyabhaskar Press and Infinium Toyota Showroom, Makarba.";
+            }
+            if (/\b(email|e-mail)\b/.test(text)) {
+                return "You can email O.V MOTORS at omrajsinhvaghela2211@gmail.com.";
+            }
+            if (/\b(hours?|open|timing)\b/.test(text)) {
+                return "Our hours are Monday-Friday, 9:00 AM-7:00 PM, and Saturday, 9:00 AM-5:00 PM.";
+            }
+            if (/\b(phone|call|contact|number)\b/.test(text)) {
+                return "You can call O.V MOTORS at 8469056004.";
+            }
+            if (/\b(financ|loan|credit|pay here|first time|buyer)\b/.test(text)) {
+                return "We offer bank financing through lending partners, Buy Here Pay Here in-house financing with no traditional credit check, and options for first-time buyers. Visit Apply Online to get started.";
+            }
+            if (/\b(apply|application|online)\b/.test(text)) {
+                return "You can apply online using the Apply Online link in the navigation menu. The credit application asks for contact and address details, date of birth, ID type, housing, employer, and income information.";
+            }
+            if (/\b(form|documents?|required|need to provide|credit application)\b/.test(text)) {
+                return "The online credit application asks for your name, email, phone, date of birth, ID type, country/region, address, city, postal code, housing details, employer and job details, and monthly income. The page does not explain which supporting documents are required.";
+            }
+            if (/\b(website|what can you|what do you|help)\b/.test(text)) {
+                return "I can help with O.V MOTORS' hours, phone, address, email, financing, online credit application, vehicle arrivals, inventory, and body styles.";
+            }
+            if (/\b(inventory|available|stock|cars|vehicles|arrivals|latest)\b/.test(text)) {
+                return "Our latest arrivals listed here are the Tata Harrier (Rs 13-26.11 lakhs; 4.6 stars, 307 reviews), Maruti Suzuki Baleno (Rs 7.5-11.5 lakhs; 4.3 stars, 156 reviews), and Volkswagen Virtus (Rs 10.71-19.20 lakh; 4.5 stars, 482 reviews). Visit Inventory to see more vehicles.";
+            }
+            if (/\b(tata|harrier)\b/.test(text)) {
+                return "The Tata Harrier is listed as a latest arrival launching in 2026, for Rs 13-26.11 lakhs, with a 4.6-star rating from 307 reviews.";
+            }
+            if (/\b(baleno|maruti|suzuki)\b/.test(text)) {
+                return "The Maruti Suzuki Baleno is listed as a latest arrival launching in 2026, for Rs 7.5-11.5 lakhs, with a 4.3-star rating from 156 reviews.";
+            }
+            if (/\b(virtus|volkswagen)\b/.test(text)) {
+                return "The Volkswagen Virtus is listed as a latest arrival launching in 2026, for Rs 10.71-19.20 lakh, with a 4.5-star rating from 482 reviews.";
+            }
+            if (/\b(suv|hatchback|sedan|muv|seven seater|body style)\b/.test(text)) {
+                return "You can shop by body style: SUV, hatchback, sedan, and MUV (seven seater). Use the body-style section or visit Inventory to browse.";
+            }
+            if (/\b(about|who are|business|dealer)\b/.test(text)) {
+                return "We are O.V MOTORS. Visit the About Us link in the navigation menu for more information.";
+            }
+            return "I can answer questions about our listed cars and prices, body styles, financing, applications, contact number, and opening hours. Try asking about one of those topics, or call us at 8469056004.";
+        }
+
+        function openHelliChat() {
+            helliChat.hidden = false;
+            helliLauncher.setAttribute("aria-expanded", "true");
+            if (helliMessages.childElementCount === 0) {
+                addHelliMessage("Hi! I'm Helli, the O.V MOTORS website assistant. Ask me about our cars, financing, contact details, application, or opening hours.", "bot");
+            }
+            helliInput.focus();
+        }
+
+        helliLauncher.addEventListener("click", openHelliChat);
+        document.getElementById("helli-close").addEventListener("click", function () {
+            helliChat.hidden = true;
+            helliLauncher.setAttribute("aria-expanded", "false");
+            helliLauncher.focus();
+        });
+        document.getElementById("helli-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const question = helliInput.value.trim();
+            if (!question) return;
+            addHelliMessage(question, "user");
+            addHelliMessage(answerHelli(question), "bot");
+            helliInput.value = "";
+            helliInput.focus();
+        });
+    </script>
+</body>
+</html>
